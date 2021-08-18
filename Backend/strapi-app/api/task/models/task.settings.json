@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tasks",
+  "info": {
+    "name": "task",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "plant": {
+      "model": "plant",
+      "via": "task"
+    },
+    "intensity": {
+      "type": "integer"
+    },
+    "task_status": {
+      "model": "task-status"
+    },
+    "times": {
+      "type": "component",
+      "repeatable": true,
+      "component": "times.times"
+    },
+    "taskid": {
+      "type": "uid"
+    },
+    "log": {
+      "type": "text"
+    }
+  }
+}

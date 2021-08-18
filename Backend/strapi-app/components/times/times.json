@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_times_times",
+  "info": {
+    "name": "times",
+    "icon": "hourglass-end"
+  },
+  "options": {},
+  "attributes": {
+    "time": {
+      "type": "time"
+    }
+  }
+}
